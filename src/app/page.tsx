@@ -2,6 +2,8 @@ import { getItems } from '@/actions/items'
 import GroceryList from '@/components/GroceryList'
 import AddItem from '@/components/AddItem'
 
+export const dynamic = 'force-dynamic'
+
 export default async function Home() {
   const items = await getItems()
 
